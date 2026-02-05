@@ -2,7 +2,11 @@
   "name": "bozitivez-sanctuary",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server/index.js",
+    "dev": "nodemon --watch server --exec ts-node server/index.ts"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "drizzle-orm": "^0.30.0",
